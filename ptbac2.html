@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giai Phuong Trinh Bac 2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		do{
+			var a = prompt('Nhap a: ');
+		}while(a == 0)
+		var b = prompt('Nhap b: ');
+		var c = prompt('Nhap c: ');
+		dt = b * b -4 * a * c;
+		n = (-b) / (2*a);
+		d1 = (-b + Math.sqrt(dt)) / (2 * a);
+		d2 = (-b - Math.sqrt(dt)) / (2 * a);
+		if (dt<0){
+			document.write('Phuong trinh vo nghiem')
+		}else if (dt == 0){
+			document.write('Phuong trinh co nghiem kep x1 = x2 ='+n)
+		}else{
+			document.write('Phuong trinh co 2 nghiem phan biet'+'<br>')
+			document.write('x1 = ' +d1 +'<br>')
+			document.write('x2 = ' +d2)
+		}
+	</script>
+</body>
+</html>
